@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML forms</title>
+</head>
+<body>
+  <form action="./postform.php" method="GET">
+
+    <label for="firstname">First name:</label> 
+    <input id="firstname" name="firstname" type="text" value="Dmytro" disabled /><br />
+
+    Password: <input type="password" placeholder="password" /><br />
+
+    <input type="number" />
+    <input type="tel" />
+    <input type="time" />
+    <input type="date" />
+    <input type="datetime" />
+
+    <br /><br />
+
+    <input name="checkgroup" type="checkbox" value="1" />
+    <input name="checkgroup" type="checkbox" value="2" checked disabled />
+    <input name="checkgroup" type="checkbox" value="3" />
+
+    <fieldset>
+      <legend>Radiogroup</legend>
+      <input name="radiogroup" type="radio" value="1" />
+      <input name="radiogroup" type="radio" value="2" checked />
+      <input name="radiogroup" type="radio" value="3" />
+    </fieldset>
+
+    <textarea style="width: 300px;height: 300px;">
+      Some text
+    </textarea>
+
+    <br /><br />
+
+    <br />
+    <input type="submit" value="Send form" />
+    <input type="button" value="Some button" />
+    <br />
+    <button>Some button</button>
+
+    <br /><br /><br />
+
+    <select name="select" size="7" multiple>
+      <option value="1">Item 1</option>
+      <option value="2">Item 2</option>
+      <option value="3" selected>Item 3</option>
+      <option value="4">Item 4</option>
+      <option value="5">Item 5</option>
+    </select>
+  </form>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>
